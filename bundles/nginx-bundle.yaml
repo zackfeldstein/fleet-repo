@@ -1,0 +1,15 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: Bundle
+metadata:
+  name: nginx
+  namespace: fleet-local
+spec:
+  resources:
+    - name: nginx
+      path: clusters/my-cluster/nginx
+  targets:
+    - clusterGroup: "development"
+      clusterSelector: {}
+      clusterLabels:
+        environment: development
+

@@ -1,0 +1,15 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: Bundle
+metadata:
+  name: mysql
+  namespace: fleet-local
+spec:
+  resources:
+    - name: mysql
+      path: clusters/my-cluster/mysql
+  targets:
+    - clusterGroup: "production"
+      clusterSelector: {}
+      clusterLabels:
+        environment: production
+
