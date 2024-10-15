@@ -1,11 +1,2 @@
 defaultNamespace: default
-targets:
-  - clusterGroup: "production"
-    clusterSelector: {}
-    clusterLabels:
-      environment: production
-  - clusterGroup: "development"
-    clusterSelector: {}
-    clusterLabels:
-      environment: development
 

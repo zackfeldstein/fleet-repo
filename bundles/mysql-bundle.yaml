@@ -6,10 +6,7 @@ metadata:
 spec:
   resources:
     - name: mysql
-      path: clusters/my-cluster/mysql
+      path: ../mysql
   targets:
-    - clusterGroup: "production"
-      clusterSelector: {}
-      clusterLabels:
-        environment: production
+    - clusterSelector: {}  # This applies to all clusters
 

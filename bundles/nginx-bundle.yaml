@@ -6,10 +6,7 @@ metadata:
 spec:
   resources:
     - name: nginx
-      path: clusters/my-cluster/nginx
+      path: ../nginx
   targets:
-    - clusterGroup: "development"
-      clusterSelector: {}
-      clusterLabels:
-        environment: development
+    - clusterSelector: {}  # This applies to all clusters
 
